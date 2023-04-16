@@ -1,0 +1,71 @@
+body
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+  width: @css{min(70vw, 70vh)}
+  margin: auto
+  padding: 16px 0
+
+header
+  display: flex
+  justify-content: space-between
+
+  h1
+    margin: 10px
+
+#grid
+  display: grid
+  grid-template-columns: repeat(20, 1fr)
+  background: white
+  height: @css{min(70vw, 70vh)}
+
+#grid-control
+  display flex
+  gap: 24px
+
+  input
+    width: 50px
+
+button
+  padding: 4px 12px
+  border-radius: 12px
+  color: white
+  background: black
+
+.cell
+  background: black
+  cursor: crosshair
+
+.outline  
+  outline: 1px solid white
+
+.colors
+  border: 1px solid black
+  border-radius: 0 0 16px 16px
+  border-top: none
+  display: flex
+  flex-direction: row
+
+
+.select-group
+  display: flex
+
+.colorGroup
+  padding-top: 8px
+  flex-grow: 1
+  display: flex
+  justify-content: space-around
+  height: 60px  
+  border: 1px solid black
+
+
+  input
+    height: 40px
+
+.palette
+  margin: 0 4px
+  flex-grow: 1
+
+p
+  text-align: center
+
+.selected
+  background: grey

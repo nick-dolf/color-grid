@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.styl" />
+    <title>Color Grid</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Color Grid</h1>
+      <div id="grid-control">
+        <div>
+          <label for="height">Height</label>
+          <input type="number" name="height" id="height" value="10" />
+          <button id="newGrid">New Grid</button>
+          <br>
+          <label for="width">Width</label>
+          <input type="number" name="width" id="width" value="10" />
+        </div>
+        <div>
+          <button id="gridOutline">Grid Outline</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="grid"></section>
+      <section class="colors">
+        <div class="palette">
+          <div class="select-group">
+            <div id="color1" class="colorGroup leftColorGroup">
+              <label for="colorChoice">1</label>
+              <input name="colorChoice" type="color" value="#ff0000" />
+            </div>
+            <div id="color2" class="colorGroup leftColorGroup">
+              <label for="colorChoice">2</label>
+              <input name="colorChoice" type="color" value="#00ff00" />
+            </div>
+            <div id="color3" class="colorGroup leftColorGroup">
+              <label for="colorChoice">3</label>
+              <input name="colorChoice" type="color" value="#0000ff" />
+            </div>
+          </div>
+          <p>Left Mouse Button</p>
+        </div>
+        <div class="palette">
+          <div class="select-group">
+            <div id="color4" class="colorGroup rightColorGroup">
+              <label for="colorChoice">4</label>
+              <input name="colorChoice" type="color" value="#ffffff" />
+            </div>
+            <div id="color5" class="colorGroup rightColorGroup">
+              <label for="colorChoice">5</label>
+              <input name="colorChoice" type="color" value="#000000" />
+            </div>
+            <div id="color6" class="colorGroup rightColorGroup">
+              <label for="colorChoice">6</label>
+              <input name="colorChoice" type="color" value="#ffff00" />
+            </div>
+          </div>
+          <p>Right Mouse Button</p>
+        </div>
+      </section>
+      <template id="cell">
+        <div class="cell outline"></div>
+      </template>
+    </main>
+    <script src="./script.js" defer></script>
+  </body>
+</html>
