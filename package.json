@@ -2,7 +2,8 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build --public-url color-grid"
+    "build": "parcel build",
+    "staging": "parcel build --public-url /toys/color-grid"
   },
   "dependencies": {
     "@parcel/compressor-gzip": "^2.8.3",
