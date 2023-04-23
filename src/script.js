@@ -1,4 +1,4 @@
-buildGrid(20,20);
+buildGrid(10,10);
 
 function buildGrid(height, width) {
   grid.style.gridTemplateColumns = `repeat(${width}, 1fr)`

@@ -1,28 +1,35 @@
+tablet()
+  @media screen and (min-width: 500px)
+    {block}
+
 body
   font-family: Verdana, Geneva, Tahoma, sans-serif
-  width: @css{min(70vw, 70vh)}
+  min-width: 320px
+  max-width: 600px
   margin: auto
-  padding: 16px 0
+  padding: 0 8px
+
+  +tablet()
+    width: 70%
 
 header
   display: flex
   justify-content: space-between
+  flex-direction: column
 
-  h1
-    margin: 10px
+  +tablet()
+    flex-direction: row
+    align-items: center
 
 #grid
   display: grid
   grid-template-columns: repeat(20, 1fr)
   background: white
-  height: @css{min(70vw, 70vh)}
+  aspect-ratio: 1
 
 #grid-control
-  display flex
-  gap: 24px
-
   input
-    width: 50px
+    width: 30px
 
 button
   padding: 4px 12px
